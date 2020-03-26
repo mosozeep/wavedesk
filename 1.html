@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width==device-width, initial-scale=1.0">
+    <title>RetroDesk</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/1.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/js.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+</style>
+
+  </head>
+  <body>
+    <div class="window">
+      <div class="display--imgs">
+        <div class="img back js-gradient"></div>
+        <div class="img grid_sky js-grid"></div>
+        <div class="img sun js-sun"></div>
+        <div class="img grid_floor js-grid"></div>
+        <div class="img main_shadow js-main"></div>
+        <div class="img main js-main" ></div>
+      </div>
+
+      <ul class="icon--wrap">
+        <li class="icon">
+          <button type="button" name="button" value="modal1" class="icon__btn icon1">
+          </button>
+          desk maker
+        </li>
+        <li class="icon">
+          <button type="button" name="button" value="modal2" class="icon__btn icon1">
+          </button>
+          Todo
+        </li>
+        <li class="icon">
+          <button type="button" name="button" value="modal3" class="icon__btn icon1">
+          </button>
+          paint
+        </li>
+        <li class="icon">
+          <button type="button" name="button" value="modal4" class="icon__btn icon1">
+          </button>
+          weather
+        </li>
+      </ul>
+
+<section id="modal1" class="modal--wrap show">
+  <div class="modal modal--display border js-purple ">
+  <div class="tab active">
+    <h1>desk maker </h1>
+    <button type="button" name="button" class="tab__btn border close js-purple" value="modal1"></button>
+  </div>
+    <ul class="display__btn--wrap">
+      <li>
+        <button type="button" name="button" id="js-gradient" class=" display__btn js-display" value="show"></button>
+      </li>
+      <li>
+        <button type="button" name="button" id="js-grid" class="display__btn js-display" value="show"></button>
+      </li>
+      <li>
+        <button type="button" name="button" id="js-sun" class="display__btn js-display" value="show"></button>
+      </li>
+      <li>
+        <button type="button" name="button" id="js-main" class="display__btn js-display" value="show"></button>
+      </li>
+      <li>
+        <button type="button" name="button" id="js-border" class="display__btn " value="purple"></button>
+      </li>
+      <li></li>
+    </ul>
+  </div>
+</section>
+
+<section id="modal2" class="modal--wrap show">
+  <div class="modal modal--todo border js-purple">
+  <div class="tab active">
+    <h1>Todo </h1>
+    <button type="button" name="button" class="tab__btn border close js-purple" value="modal2"></button>
+  </div>
+  <article class="todo__article border--reverse">
+    <ul class="js-toDoList toDoList"></ul>
+    <a href="#" class="js-delAll delAll"></a>
+    <div class="todo__form--wrap">
+      <p>please input your task</p>
+      <form class="js-toDoForm todo__form">
+        <i></i>
+        <input type="text">
+      </form>
+    </div>
+  </article>
+  </div>
+</section>
+
+<section id="modal3" class="modal--wrap ">
+  <div class="modal modal--paint border js-purple ">
+  <div class="tab active">
+    <h1>Paint</h1>
+    <button type="button" name="button" class="tab__btn border close js-purple" value="modal3"></button>
+  </div>
+  <ul class="paint--top">
+    <li><a href="#" id="jsSave">save</a></li>
+    <li><a href="#">undo</a></li>
+    <li>
+      <input type="range" id="jsRange" min="0.1" max="5.0" value="2.5" step="0.1">
+    </li>
+  </ul>
+  <article class="paint__article">
+    <div class="paint--tools">
+      <button type="button" name="button" id="jsPen" class="tools__btn border js-purple">펜</button>
+      <button type="button" name="button" id="jsFill" class="tools__btn border js-purple">칠</button>
+      <button type="button" name="button" class="tools__btn border js-purple">직</button>
+      <button type="button" name="button" class="tools__btn border js-purple">네</button>
+      <button type="button" name="button" class="tools__btn border js-purple">세</button>
+      <button type="button" name="button" class="tools__btn border js-purple">원</button>
+      <button type="button" name="button" class="tools__btn border js-purple">육</button>
+    </div>
+    <canvas id="jsCanvas" class="paint__canvas border--reverse"></canvas>
+    <table class="paint--palette">
+      <tr>
+        <td class="jsColors palette--colors border--reverse" style="background-color:#000">1</td>
+        <td class="jsColors palette--colors border--reverse" style="background-color:#ff3b30">2</td>
+      </tr>
+      <tr>
+        <td class="jsColors palette--colors border--reverse" style="background-color:#fff">1</td>
+        <td class="jsColors palette--colors border--reverse" style="background-color:#ff3b30">2</td>
+      </tr>
+      <tr>
+        <td class="jsColors palette--colors border--reverse" style="background-color:red">1</td>
+        <td class="jsColors palette--colors border--reverse" style="background-color:#ff3b30">2</td>
+      </tr>
+      <tr>
+        <td class="jsColors palette--colors border--reverse" style="background-color:yellow">1</td>
+        <td class="jsColors palette--colors border--reverse" style="background-color:#ff3b30">2</td>
+      </tr>
+      <tr>
+        <td class="jsColors palette--colors border--reverse" style="background-color:orange">1</td>
+        <td class="jsColors palette--colors border--reverse" style="background-color:#ff3b30">2</td>
+      </tr>
+      <tr>
+        <td class="jsColors palette--colors border--reverse" style="background-color:green">1</td>
+        <td class="jsColors palette--colors border--reverse" style="background-color:#ff3b30">2</td>
+      </tr>
+      <tr>
+        <td class="jsColors palette--colors border--reverse" style="background-color:blue">1</td>
+        <td class="jsColors palette--colors border--reverse" style="background-color:#ff3b30">2</td>
+      </tr>
+      <td class="jsColors palette--colors border--reverse" style="background-color:purple">1</td>
+      <td class="jsColors palette--colors border--reverse" style="background-color:#ff3b30">2</td>
+    </tr>
+
+
+
+    </table>
+
+  </article>
+  </div>
+</section>
+
+
+    <footer class="taskbar js-purple">
+      <button type="button" name="button" class="taskbar__btn border--reverse js-purple--reverse">
+        <img class="taskbar--icon" src="img/wavedesk3.png" alt="wavedesk_icon" >
+      WaveDesk</button>
+      <button type="button" name="button" class="taskbar__btn border js-purple">
+        Todo</button>
+      <button type="button" name="button" class="taskbar__btn border js-purple">paint</button>
+      <button type="button" name="button" class="taskbar__btn border js-purple">weather</button>
+      <div class="js-clock">
+        <h6  class="clock border--reverse js-purple">00:00:00</h6>
+      </div>
+    </footer>
+
+
+</div>
+
+  <!-- <script src="js/clock.js"></script> -->
+  <script src="js/btn.js"></script>
+  <!-- <script src="js/todo.js"></script> -->
+  <script src="js/todo1.js"></script>
+  <script src="js/paint.js"></script>
+  </body>
+</html>

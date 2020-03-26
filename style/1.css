@@ -1,0 +1,181 @@
+@charset "UTF-8";
+body{
+font-family: 'VT323', monospace, 굴림;
+  font-size:15px;
+  background-color: #000;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+button:focus{
+  outline: 0;
+}
+
+
+.border{
+  background-color: #bfb8bf;
+  border-top: 2px solid #ededed;
+  border-left: 2px solid #ededed;
+  border-bottom: 2px solid #0f0f0f;
+  border-right: 2px solid #0f0f0f;
+}
+
+.border--reverse{
+  border-bottom: 2px solid #ededed;
+  border-right: 2px solid #ededed;
+  border-top: 2px solid #0f0f0f;
+  border-left:2px solid #0f0f0f;
+}
+
+.window{
+  background-color: #008c94;
+  max-width: 130vh;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+.back{
+  background-image: url("../img/back.png");
+}
+.grid_sky{
+  background-image: url("../img/grid_sky.png");
+}
+.sun{
+  background-image: url("../img/sun4.png");
+}
+.grid_floor{
+  background-image: url("../img/grid_floor.png");
+}
+.main_shadow{
+  background-image: url("../img/main_shadow.png");
+}
+.main{
+  background-image: url("../img/main1.gif");
+}
+
+.icon--wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon{
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+}
+.icon__btn{
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: rgba(0, 0, 0, 0);
+}
+
+.icon__img{
+  width: 100%;
+  height: 100%;
+}
+
+.icon1{
+  background-image: url("../img/wavedesk1.png");
+  background-size: cover;
+}
+.icon2{
+
+}
+.icon3{
+
+}
+.icon4{
+
+}
+
+.taskbar{
+  height: 40px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  bottom: 0; left: 0;
+  background-color: #bfb8bf;
+  border-top: 1.5px solid #fff;
+  box-shadow: 0 -1.5px 0 #dfd8df;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.taskbar__btn{
+  float: left;
+  height: 24px;
+  padding: 1px;
+  margin: 4px 2px;
+  line-height: 24px;
+}
+
+.taskbar--icon{
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+
+.clock {
+  float: right;
+  margin: 3px 2px;
+  background-color: #bfb8bf;
+  height: 20px;
+  padding: 1px 3px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.modal--wrap{
+  display: none;
+}
+.modal{
+  background-color: #bfb8bf;
+  position: absolute;
+  padding: 2px;
+}
+
+
+div.tab{
+  height: 25px;
+  padding:0 2px;
+  position: relative;
+  color: white;
+
+}
+.active{
+  background-color: rgb(7, 9, 147);
+}
+
+.tab > h1{
+  line-height: 25px;
+  float: left;
+}
+
+.tab__btn{
+  margin: 3px 0;
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+.close{
+  background-image: url("../img/x.png");
+  background-size: cover;
+}
